@@ -3,11 +3,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package jdbc;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author GERAL
  */
 public class TesteConexao {
-    
+    public static void main(String[] args) {
+        
+        try {
+            ModuloConexao.conectar();
+        } catch (Exception erro) {
+            JOptionPane.showMessageDialog(null, "opss, aconteceu o erro: " + erro);
+        }
+    }
 }
