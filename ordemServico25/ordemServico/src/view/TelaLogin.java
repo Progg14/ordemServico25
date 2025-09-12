@@ -117,6 +117,7 @@ public class TelaLogin extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -127,7 +128,7 @@ public class TelaLogin extends javax.swing.JFrame {
                try {
             String usario, senha;
            
-            usario = jTxtUsario.getText();
+            usario = jTxtUsuario.getText();
             senha = jTxtSenha.getText();
             
             UsuarioDAO  dao = new UsuarioDAO();

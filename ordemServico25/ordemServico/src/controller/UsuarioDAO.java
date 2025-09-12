@@ -33,7 +33,7 @@ public class UsuarioDAO {
             if (rs.next()) {
                 //Usuario logou
                 TelaPrincipal tela = new TelaPrincipal();
-                tela.set
+                //
             } else {
                 //Dados incorretos
                 JOptionPane.showMessageDialog(null, "Dados incorretos!");
